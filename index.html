@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="axolote">
+
+<head>
+    <title>Axolote</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Axolote">
+    <meta name="author" content="Paulo Sergio <paulo@joho.com.br>">
+    
+    <link rel="stylesheet" href="./public/css/app.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+    <script src="./lib/angular.min.js"></script>
+    <script src="./lib/angular-route.min.js"></script>
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="./lib/angula-bootstrap-modal.js"></script>
+    <script src="./lib/ui-bootstrap-tpls-2.5.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular-messages.min.js"></script>
+
+    <script src="./public/js/min/app.js"></script>
+</head>
+
+<body>
+
+    <div id="top_menu" ng-include="'./views/menu.html'"></div>
+
+    <div ng-view></div>
+
+    <div id="footer" class="footer" ng-include="'./views/footer.html'"></div>
+
+    <script src="./lib/jquery-3.2.1.slim.min.js"></script>
+    <script src="./lib/bootstrap.min.js"></script>
+
+</body>
+
+</html>

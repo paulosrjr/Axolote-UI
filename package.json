@@ -1,0 +1,46 @@
+{
+  "name": "axolote-ui",
+  "version": "0.0.1",
+  "description": "Axolote-UI is a dependency of Axolote.",
+  "main": "index.html",
+  "scripts": {
+    "license": "cat LICENSE | more",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " http-server ./ -a 0.0.0.0 -p 8090 --gzip -o -r"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulosrjr/Axolote-UI.git"
+  },
+  "keywords": [
+    "backup",
+    "cloud",
+    "restore",
+    "security",
+    "node",
+    "aws",
+    "azure",
+    "gce",
+    "google",
+    "softlayer",
+    "s3",
+    "container"
+  ],
+  "author": "Paulo Sergio <paulo@joho.com.br>",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/paulosrjr/Axolote-UI/issues"
+  },
+  "homepage": "https://github.com/paulosrjr/Axolote-UI#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-ng-annotate": "^3.0.0"
+  }
+}

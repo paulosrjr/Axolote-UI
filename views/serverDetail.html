@@ -1,0 +1,26 @@
+<div ng-controller="serverController">
+
+    <h3>Deta</h3>
+
+    <div>{{messageBox}}</div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    <a href="">Nome</a>
+                </th>
+                <th>
+                    <a href="">Address</a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="server in servers">
+                <td>{{server.name}}</td>
+                <td>{{server.address}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

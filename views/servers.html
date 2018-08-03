@@ -1,0 +1,57 @@
+<div ng-controller="serverController">
+
+<div>{{messageBox}}</div>
+
+<div class="container page-title">
+    <div class="row justify-content-md-left">
+        <div class="col-2 flex-fixed-width-item justify-content-md-center">
+            <h4 class="font-weight-normal">{{app}}</h4>
+        </div>
+        <div class="col mw-100">
+            <input class="form-control search-form mw-100" type="text" placeholder="What are you searching for?" />
+        </div>
+        <div class="col flex-fixed-width-item">
+            <button type="button" class="btn btn-info page-submenu-button" ng-click="newForm = !newForm">New Item</button>
+        </div>
+    </div>
+</div>
+
+<div ng-show="newForm">
+    <div class="new-page-title">
+        <h4>New Server</h4>
+    </div>
+    <div id="new-server" class="new-page-form" ng-include="'./views/newServer.html'"></div>
+    <div class="new-page-footer">
+        <button class="btn btn-success new-button">Save</button>
+        <button class="btn btn-danger new-button">Cancel</button>
+    </div>
+</div>
+
+<div class="container page-table">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    <a href="">Name</a>
+                </th>
+                <th>
+                    <a href="">Address</a>
+                </th>
+                <th>
+                    <a href="">Description</a>
+                </th>
+                <th>
+                    <a href="">Actions</a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="server in servers">
+                <td>{{server.name}}</td>
+                <td>{{server.address}}</td>
+                <td>{{server.description}}</td>
+                <td><i class="material-icons md-36">edit</i><i class="material-icons md-36">delete</i></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
